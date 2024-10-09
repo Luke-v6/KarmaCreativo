@@ -51,6 +51,7 @@
             color: rgb(40,72, 133); /* Color del texto de los enlaces */
             padding: 10px; /* Espacio alrededor del texto */
             transition: background-color 0.3s; /* Transición suave */
+            font-size: 1.5rem; /* Aumenta el tamaño del texto aquí */
         }
     
         nav ul li a:hover {
@@ -94,19 +95,24 @@
             color: rgba(0, 255, 255, 0.831); /* Color al pasar el mouse */
         }
 
-        img {
-            margin: 10px; /* Añade un margen de 10px alrededor de cada imagen */
-            border-radius: 5px; /* Bordes redondeados para un efecto más suave */
-        }
-
-        
         .article {
             background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de opacidad */
             padding: 15px; /* Espacio interno alrededor del contenido */
             border-radius: 10px; /* Bordes redondeados */
             margin: 10px 0; /* Espacio vertical entre artículos */
+            display: flex; /* Usar flexbox para alinear las imágenes */
+            flex-wrap: wrap; /* Permitir que las imágenes se ajusten a varias líneas */
+            justify-content: center; /* Centrar las imágenes horizontalmente */
         }
-          
+        
+        img {
+            width: 125px;  /* Ancho fijo para todas las imágenes */
+            height: 125px; /* Altura fija para todas las imágenes */
+            margin: 10px; /* Añade un margen de 10px alrededor de cada imagen */
+            border-radius: 5px; /* Bordes redondeados para un efecto más suave */
+        }
+        
+    
 
        
             

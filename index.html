@@ -42,6 +42,103 @@
         html {
             scroll-behavior: smooth;
           }
+          img {
+            width: 125px;  /* Ancho fijo para todas las imágenes */
+            height: auto;  /* Altura automática para mantener la proporción */
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white; /* Color del texto de los enlaces */
+            padding: 10px; /* Espacio alrededor del texto */
+            transition: background-color 0.3s; /* Transición suave */
+        }
+    
+        nav ul li a:hover {
+            background-color: rgba(0, 255, 255, 0.5); /* Color de fondo al pasar el mouse */
+        }
+
+        .article, .combos {
+            margin: 20px; /* Margen alrededor de los artículos */
+            padding: 15px; /* Espacio interno en los artículos */
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo claro para destacar los artículos */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+        
+        #contacto {
+            margin: 20px; /* Margen alrededor de la sección de contacto */
+            padding: 15px; /* Espacio interno en la sección de contacto */
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo claro para destacar la sección de contacto */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+        
+        h1.titulo {
+            font-size: 2.5rem; /* Tamaño de fuente más grande */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra del texto */
+        }
+        
+        h2 {
+            font-size: 1.8rem; /* Tamaño de fuente más grande para los h2 */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+        }
+        
+        h3.sobretitu {
+            font-size: 1.5rem; /* Ajusta el tamaño del subtítulo */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+        }
+
+        
+        nav ul li a {
+            color: white; /* Color del texto por defecto */
+            transition: color 0.3s ease; /* Transición suave */
+        }
+        
+        nav ul li a:hover {
+            color: rgba(0, 255, 255, 0.831); /* Color al pasar el mouse */
+        }
+
+        img {
+            margin: 10px; /* Añade un margen de 10px alrededor de cada imagen */
+            border-radius: 5px; /* Bordes redondeados para un efecto más suave */
+        }
+
+        
+        .article {
+            background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco con 80% de opacidad */
+            padding: 15px; /* Espacio interno alrededor del contenido */
+            border-radius: 10px; /* Bordes redondeados */
+            margin: 10px 0; /* Espacio vertical entre artículos */
+        }
+          
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con 70% de opacidad */
+            padding: 10px 0; /* Espaciado vertical */
+        }
+        
+        nav ul li a {
+            color: white; /* Color de texto blanco */
+            text-decoration: none; /* Sin subrayado */
+            padding: 10px 15px; /* Espaciado alrededor del enlace */
+        }
+        
+        nav ul li a:hover {
+            background-color: rgba(0, 255, 255, 0.5); /* Color de fondo al pasar el mouse */
+            border-radius: 5px; /* Bordes redondeados en el fondo al pasar el mouse */
+        }
+
+        section {
+            margin: 20px 0; /* Margen superior e inferior */
+        }
+
+        
+        article h2 {
+            background-color: rgba(0, 255, 255, 0.3); /* Fondo semitransparente */
+            padding: 10px; /* Espaciado interno */
+            border-radius: 5px; /* Bordes redondeados */
+            margin: 10px 0; /* Margen superior e inferior */
+        }
+        
+        
     </style>
 
 
@@ -82,9 +179,6 @@
             <li><a href="#Termos">
                 Termos
             </a></li>
-            <li><a href="Promos y ofertas">
-                    Ofertas y promos
-            </a></li>
         </ul>            
     </nav>
     <div class="clearfix"></div>
@@ -92,43 +186,44 @@
 
         <article class="article">
             <h2>Vasos termicos y Chops personalizados</h2>
-            <img width="125px" src="imagenes/vasotermicoboca.jpg" alt="vaso boca">    <img width="125px" src="imagenes/vaso termico.jpg" alt="vaso duki"> <img width="125px" src="imagenes/chops.jpg" alt="chop">
+            <img src="imagenes/vasotermicoboca.jpg" alt="vaso boca">    <img  src="imagenes/vaso termico.jpg" alt="vaso duki"> <img src="imagenes/chops.jpg" alt="chop">
         </article>
         <article class="article">
             <h2>Canastas y Yerberos</h2>
-            <img width="125px" src="imagenes/canastacontododo.jpg" alt="cant"> <img width="125px" src="imagenes/yerberas eco.jpg" alt="yereco"> <img width="125px" src="imagenes/canastas.jpg" alt="canastvacia"> 
+            <img src="imagenes/canastacontododo.jpg" alt="cant"> <img src="imagenes/yerberas eco.jpg" alt="yereco"> <img  src="imagenes/canastas.jpg" alt="canastvacia"> 
 
         </article>
         <article class="dia de la madre ">
             <h2>Dia de la madre</h2>
-            <img width="125px" src="imagenes/dia de la madre matelisto.jpg" alt="matelist"> <img width="125px" src="imagenes/raices madre.jpg" alt="matema"> <img width="125px" src="imagenes/mate raices.jpg" alt="matera"> 
+            <img  src="imagenes/dia de la madre matelisto.jpg" alt="matelist"> <img  src="imagenes/raices madre.jpg" alt="matema"> <img  src="imagenes/mate raices.jpg" alt="matera"> 
         </article>
         <section id="Mates"></section>
         <article class="mates">
             <h2>Mates de algarrobo con virola mixta</h2>
-            <img width="125px" src="imagenes/matealgarrobo2.jpg" alt="Mate de algarrobo con virola mixta"> <img width="125px" src="imagenes/matealgarroboimperial.jpg" alt="mate"> <img width="125px" src="imagenes/matealgarrobo3.jpg" alt="">
+            <img src="imagenes/matealgarrobo2.jpg" alt="Mate de algarrobo con virola mixta"> <img  src="imagenes/matealgarroboimperial.jpg" alt="mate"> <img src="imagenes/matealgarrobo3.jpg" alt="">
         </article>
         <article class="article">
             <h2>Mates de algarrobo</h2>
-             <img width="125" alt="Mate algarrobo" src="imagenes/matealgarrobo.jpg"> <img width="125px"  alt="mate" src="imagenes/matealgarrobogrande1.jpeg"> <img width="125px"  src="imagenes/matealgarrobogrande2.jpg" alt="mate3">
+             <img  alt="Mate algarrobo" src="imagenes/matealgarrobogrande.jpg">   <img alt="mateg1" src="imagenes/matealgarrobogrande1.jpeg"> <img   src="imagenes/matealgarrobogrande2.jpg" alt="mate3">
         </article>
         <article class="article">
             <h2>Mates imperiales</h2>
-            <img width="125px" src="imagenes/imperiales cam.jpg" alt="matim"> <img width="125px" src="imagenes/imperialinternet1.jpg" alt="matim"> <img width="125px" src="imagenes/imperialinternet2.jpg" alt="mat2">
+            <img  src="imagenes/imperiales cam.jpg" alt="matim"> <img  src="imagenes/imperialinternet1.jpg" alt="matim"> <img src="imagenes/imperialinternet2.jpg" alt="mat2">
         </article>
         <article class="mateacero">
             <h2>Mates de acero</h2>
-            <img width="125px" src="imagenes/mates de acero.jpg" alt="mat"> <img width="125px" src="imagenes/mateacerovini.jpg" alt="matvin"> <img width="125px" src="imagenes/mateacerograb.jpg" alt="matgrab">
+            <img  src="imagenes/mates de acero.jpg" alt="mat"> <img  src="imagenes/mateacerovini.jpg" alt="matvin"> <img  src="imagenes/mateacerograb.jpg" alt="matgrab">
         </article>
         <section id="Termos">
+            <h2>Termos</h2>
             <article class="article">
-                <img width="125px" src="imagenes/termos.jpg" alt="termo"> <img width="125px" src="imagenes/irrompible.jpg" alt="irro">
+                <img  src="imagenes/termos.jpg" alt="termo"> <img src="imagenes/irrompible.jpg" alt="irro">
             </article>
         </section>
         <section id="combos"> </section>
         <article class="combos">
             <h2>Combos</h2>
-            <img width="125" alt="combo rosa" src="imagenes/combo rosa.jpg"> <img width="125" alt="combo verde" src="imagenes/combo verde.jpg"> <img width="125" alt="combo negro" src="imagenes/combo negro.jpg">
+            <img  alt="combo rosa" src="imagenes/combo rosa.jpg"> <img  alt="combo verde" src="imagenes/combo verde.jpg"> <img  alt="combo negro" src="imagenes/combo negro.jpg">
 
         </article>
 

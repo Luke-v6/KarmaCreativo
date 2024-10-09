@@ -111,9 +111,13 @@
           
 
         nav {
-            background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con 70% de opacidad */
-            padding: 10px 0; /* Espaciado vertical */
-        }
+                background-color: rgba(0, 0, 0, 0.7); /* Fondo negro */
+                padding: 10px 0; /* Espaciado vertical */
+                margin-top: 0; /* Asegúrate de que no haya margen superior */
+                position: relative; /* Asegúrate de que esté en el flujo normal del documento */
+                z-index: 10; /* Asegúrate de que esté en el frente de otras secciones */
+            }
+            
         
         nav ul li a {
             color: white; /* Color de texto blanco */
@@ -133,6 +137,10 @@
             padding: 10px; /* Espaciado interno */
             border-radius: 5px; /* Bordes redondeados */
             margin: 10px 0; /* Margen superior e inferior */
+        }
+        section {
+            margin: 20px 0; /* Margen superior e inferior */
+            padding-bottom: 20px; /* Espacio inferior adicional */
         }
         
         
@@ -205,13 +213,13 @@
             <h2>Mates de acero</h2>
             <img  src="imagenes/mates de acero.jpg" alt="mat"> <img  src="imagenes/mateacerovini.jpg" alt="matvin"> <img  src="imagenes/mateacerograb.jpg" alt="matgrab">
         </article>
-        <section id="article">
-            <h2>Termos</h2>
+        <section id="Termos">
             <article class="article">
+                <h2>Termos</h2>
                 <img  src="imagenes/termos.jpg" alt="termo"> <img src="imagenes/irrompible.jpg" alt="irro">
             </article>
         </section>
-        <section id="Termos"> </section>
+        <section id="combos"> </section>
         <article class="article">
             <h2>Combos</h2>
             <img  alt="combo rosa" src="imagenes/combo rosa.jpg"> <img  alt="combo verde" src="imagenes/combo verde.jpg"> <img  alt="combo negro" src="imagenes/combo negro.jpg">
